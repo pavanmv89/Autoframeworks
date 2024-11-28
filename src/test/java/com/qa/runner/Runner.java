@@ -10,6 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		features = "src/test/resources/Features",
 		glue = {"com.qa.usersapi"},
 		monochrome = true,
+		plugin = {"pretty","html:target/Reports/cucumber.html"},
 		tags = "@listusers"
 		)
 
