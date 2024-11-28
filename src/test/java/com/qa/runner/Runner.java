@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue = {"com.qa.usersapi"},
 		monochrome = true,
 //		plugin = {"pretty","html:target/Reports/cucumber.html"},
-				plugin = "json:target/cucumberreport.json",
+				plugin = "json:Reports/cucumberreport.json",
 		tags = "@listusers"
 		)
 
