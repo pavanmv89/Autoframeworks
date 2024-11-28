@@ -26,7 +26,7 @@ Feature: Verify user apis
     And get the response
     When get on specific user
     And update user
-    And update one more time
+    And create a new user
     Then validate updated user
     And delete user
 

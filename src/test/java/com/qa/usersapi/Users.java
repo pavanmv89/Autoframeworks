@@ -42,9 +42,13 @@ Logger log=Logger.getLogger(Users.class.getName());
 	}
 	@When("update user")
 	public void update_user() {
+		users=update();
+		log.info("users >> "+users.asPrettyString());
 	}
-	@When("update one more time")
-	public void update_one_more_time() {
+	@When("create a new user")
+	public void create_a_new_user() {
+		users=createuser();
+		log.info("users >> "+users.asPrettyString());
 	}
 	@Then("validate updated user")
 	public void validate_updated_user() {
